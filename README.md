@@ -1,5 +1,6 @@
 # FlippeFloppe
 
+# // WIP //
 FlippeFloppe is a mechanical display. Each pixel is a L shape 'flipped' by a servo.
 
 The pixels are just 2 squares in an L shape and a servo behind it to rotate it. 
