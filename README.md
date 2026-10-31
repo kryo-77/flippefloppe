@@ -1,13 +1,17 @@
 # FlippeFloppe
 
-# // WIP //
-FlippeFloppe is a mechanical display. Each pixel is a L shape 'flipped' by a servo.
+![](images/main/is_main.png)
 
-The pixels are just 2 squares in an L shape and a servo behind it to rotate it. 
+FlippeFloppe is a modular mechanical display.
 
-I used an L shape as its easy to flip and show the pixel being 'on' and 'off' by having different colors on the faces. 
+It can be of any size, but each module requires one SG90 servo.
 
-It can be of any size, though each pixel requires one servo.
+It can be used to display things like animations and text depending upon the size of the grid. 
 
-(Inspired from flip dot display and "Mechanically Multiplexed Flip-Dot Matrix" Youtube video by James Bruton)
+For this prototype though, I'll be using a 4x4 grid and use it as a binary clock.
 
+Here are a few examples:
+
+![Clock_gif](images/examples/clock.gif)
+
+In this, the display shows time from 9:57am to 10am. Green square is OFF while red square is ON.
