@@ -27,6 +27,8 @@ The maximum number of pixels ON (red) in this 24-hour binary clock is 9, first r
 ## Status
 Currently only CAD model is designed and not printed physically. Print settings probably will change.
 
+Code is tested with XIAO S3 and only 4 SG90 servos.
+
 ## Why I made it
 
 First time I saw a mechanical display was in a YouTube video which showed Split-Flap displays. It looked very cool and satisfying and I really wanted to make it, but felt way too complex. I searched around for easier designs but then just gave up, until I came across a video titled "[Mechanically Multiplexed Flip-Dot Matrix](<https://www.youtube.com/watch?v=tzm8KB9QgJg>)" by James Bruton. His mechanism was really simple but it was slow as it only used 3 servos for the entire display which used a motor and a lead screw to move them left and right. So I decided to take inspiration from his design and make my own mechanical display which uses one servo per pixel.
@@ -105,23 +107,24 @@ Though the servo does need screws for its mount.
 ## Firmware / Wiring
 // WIP //
 
-`Firmware` folder contains a `display.ino` file. This is the code for ESP32.
-
 !! The current .ino file is tested with 4 servos and a xiao s3 !!
+
+`Firmware` folder contains a `display.ino` file. This is the code for ESP32.
 
 It also contains a wiring schematic which is very simple. You only need to connect the ESP32 and PCA9685 using 4 wires.
 
 I've used a ESP32 C3 SuperMini as its very small and cheap. We only need 2 GPIO pins for I2C anyways so we have more than enough pins. Only GPIO0 and GPIO1 are used on the C3.
 
 ## BOM
+Bom · MD
 | Sr | Component | Use | Qty | $ (each) | Link |
 |----|-----------|-----|-----|----------|------|
-| 1 | ESP32 C3 SuperMini | Microcontroller | 1 |
-| 2 | PCA9685 | Driving the servos | 1 | | |
-| 3 | SG90 Servo | Driving the mechanism | 16 |
-| 4 | Power supply | 5V / 5A supply | 1 |
-| 5 | Screws | 3x per module (optional, already come with the servos) | 48 | 
-| 6 | Jumper wires |  Extending servo wires & connecting comonents | - | 
+| 1 | ESP32 C3 SuperMini | Microcontroller | 1 | 2.72 | [Link](https://makerbazar.in/products/esp32-c3-supermini-iot-development-board) |
+| 2 | PCA9685 | Driving the servos | 1 | 2.62 | [Link](https://robu.in/product/16-channel-12-bit-pwmservo-driver-i2c-interface-pca9685-arduino-raspberry-pi/) |
+| 3 | SG90 Servo | Driving the mechanism | 16 | 0.94 | [Link](https://robu.in/product/towerpro-sg90-9g-mini-servo-9-gram/) |
+| 4 | Power supply | 5V / 5A supply | 1 | 4.50 | [Link](https://quartzcomponents.com/products/5v-5a-power-supply-charger-25w-smps-adapter) |
+ 
+
 
 
 ## Schematic / Wiring diagram

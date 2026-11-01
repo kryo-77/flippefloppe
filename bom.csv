@@ -1,0 +1,5 @@
+Sr,Component,Use,Qty,$ (each),Link
+1,ESP32 C3 SuperMini,Microcontroller,1,2.72,https://makerbazar.in/products/esp32-c3-supermini-iot-development-board
+2,PCA9685,Driving the servos,1,2.62,https://robu.in/product/16-channel-12-bit-pwmservo-driver-i2c-interface-pca9685-arduino-raspberry-pi/
+3,SG90 Servo,Driving the mechanism,16,0.94,https://robu.in/product/towerpro-sg90-9g-mini-servo-9-gram/
+4,Power supply,5V / 5A supply,1,4.50,https://quartzcomponents.com/products/5v-5a-power-supply-charger-25w-smps-adapter
