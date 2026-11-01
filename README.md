@@ -13,6 +13,8 @@ This prototype uses 16 modules in a 4x4 grid and uses it as a 24h binary clock.
 
  (I had to save $ on filament so binary clock felt like the best idea for a 4x4 grid.)
 
+Also it doesn't require a PCB.
+
 ## Example
 
 The animation shows the time going from 9:57 am to 10:00 am :
@@ -104,6 +106,12 @@ The modules just slide on together with each other. The holes and pegs are mainl
 Though the servo does need screws for its mount.
 ![Servo mount](images/show/enc_servo.png)
 
+## Schematic / Wiring diagram
+![Wiring schematic](PCB/Wiring_schem.png)
+
+No PCB required as its just 3 components which connected together with a few jumper wires.
+
+
 ## Firmware
 // WIP //
 
@@ -124,13 +132,6 @@ Bom · MD
 | 3 | SG90 Servo | Driving the mechanism | 16 | 0.94 | [Link](https://robu.in/product/towerpro-sg90-9g-mini-servo-9-gram/) |
 | 4 | Power supply | 5V / 5A supply | 1 | 4.50 | [Link](https://quartzcomponents.com/products/5v-5a-power-supply-charger-25w-smps-adapter) |
  
-
-
-
-## Schematic / Wiring diagram
-![Wiring schematic](PCB/Wiring_schem.png)
-
-No PCB required as its just 3 components which connected together with a few jumper wires.
 
 ## To-do list
 1) Make enclosure for electronics
