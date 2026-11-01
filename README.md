@@ -31,6 +31,8 @@ Currently only CAD model is designed and not printed physically. Print settings 
 
 First time I saw a mechanical display was in a YouTube video which showed Split-Flap displays. It looked very cool and satisfying and I really wanted to make it, but felt way too complex. I searched around for easier designs but then just gave up, until I came across a video titled "[Mechanically Multiplexed Flip-Dot Matrix](<https://www.youtube.com/watch?v=tzm8KB9QgJg>)" by James Bruton. His mechanism was really simple but it was slow as it only used 3 servos for the entire display which used a motor and a lead screw to move them left and right. So I decided to take inspiration from his design and make my own mechanical display which uses one servo per pixel.
 
+I probably would have procrastinated this project if it wasn't for hackclub's Half Life event.
+
 ## How it works
 
 **There are 3 parts per module.**
@@ -61,10 +63,14 @@ The red square sits at a lower height than the green square, along with both squ
 
 `part1` stl - needs to be printed 16 times.
 `part2` stl - needs to be printed 16 times.
-- Material: PLA
+- Material: PLA 
+- Color: White
 - Layer height: 0.2mm
 - Supports: YES
 - Infill: any
+
+Use this rotation when putting parts in slicer so it uses less supports
+![how to print layout](images/how_to_print.png)
 
 As the walls are thin for enclosure as well as the L shape, infill doesn't really matter. 
 
@@ -101,6 +107,8 @@ Though the servo does need screws for its mount.
 
 `Firmware` folder contains a `display.ino` file. This is the code for ESP32.
 
+!! The current .ino file is tested with 4 servos and a xiao s3 !!
+
 It also contains a wiring schematic which is very simple. You only need to connect the ESP32 and PCA9685 using 4 wires.
 
 I've used a ESP32 C3 SuperMini as its very small and cheap. We only need 2 GPIO pins for I2C anyways so we have more than enough pins. Only GPIO0 and GPIO1 are used on the C3.
@@ -117,7 +125,7 @@ I've used a ESP32 C3 SuperMini as its very small and cheap. We only need 2 GPIO 
 
 
 ## Schematic / Wiring diagram
-![Wiring schematic](PCB/week4_pcb.png)
+![Wiring schematic](PCB/wiring_schem.png)
 
 No PCB required as its just 3 components which connected together with a few jumper wires.
 
@@ -126,4 +134,5 @@ No PCB required as its just 3 components which connected together with a few jum
 2) Add OLED screens on the bottom so normal clock can be read on the oleds.
 Here's my design for the oled enclosure:
 ![to-do](images/future_upd.png)
-3) Add RTC module (already in schematic but not used) so binary clock works offline.
+3) Change code to be for ESP32 C3 SuperMini
+3) Add RTC module so binary clock works offline. (basically adding this once week 9 starts)
