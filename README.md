@@ -104,7 +104,7 @@ The modules just slide on together with each other. The holes and pegs are mainl
 Though the servo does need screws for its mount.
 ![Servo mount](images/show/enc_servo.png)
 
-## Firmware / Wiring
+## Firmware
 // WIP //
 
 !! The current .ino file is tested with 4 servos and a xiao s3 !!
@@ -128,7 +128,7 @@ Bom · MD
 
 
 ## Schematic / Wiring diagram
-![Wiring schematic](PCB/wiring_schem.png)
+![Wiring schematic](PCB/Wiring_schem.png)
 
 No PCB required as its just 3 components which connected together with a few jumper wires.
 
